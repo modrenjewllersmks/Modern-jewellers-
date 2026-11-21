@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+    --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --color-white: #ffffff;
+    --color-ivory: #f8f5ef;
+    --color-champagne: #c6a66b;
+    --color-champagne-ink: #7d602b;
+    --color-beige: #e9dfce;
+    --color-charcoal: #292929;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    background-color: var(--color-white);
+    color: var(--color-charcoal);
+    overflow-x: clip;
+  }
+
+  body {
+    overflow-x: clip;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+  }
+}
+
+.font-editorial {
+  font-family: var(--font-serif);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle luxury scrollbar matching light ivory palette */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f5ef;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8ccb8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c6a66b;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

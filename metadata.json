@@ -1,0 +1,8 @@
+{
+  "name": "Modern Jewellers",
+  "description": "Ultra-premium luxury jewellery showroom and cinematic video showcase for Modern Jewellers in Sri Muktsar Sahib, Punjab, India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
